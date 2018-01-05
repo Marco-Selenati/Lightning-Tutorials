@@ -2665,33 +2665,33 @@ fieldset[disabled] a.btn {
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #0275d8;
-  border-color: #0275d8;
+  color: #93a1a1;
+  background-color: #cb4b16;
+  border-color: #cb4b16;
 }
 
 .btn-primary:hover {
-  color: #fff;
-  background-color: #025aa5;
-  border-color: #01549b;
+  color: #93a1a1;
+  background-color: #9d3a11;
+  border-color: #943710;
 }
 
 .btn-primary:focus, .btn-primary.focus {
-  -webkit-box-shadow: 0 0 0 2px rgba(2, 117, 216, 0.5);
-          box-shadow: 0 0 0 2px rgba(2, 117, 216, 0.5);
+  -webkit-box-shadow: 0 0 0 2px rgba(203, 75, 22, 0.5);
+          box-shadow: 0 0 0 2px rgba(203, 75, 22, 0.5);
 }
 
 .btn-primary.disabled, .btn-primary:disabled {
-  background-color: #0275d8;
-  border-color: #0275d8;
+  background-color: #cb4b16;
+  border-color: #cb4b16;
 }
 
 .btn-primary:active, .btn-primary.active,
 .show > .btn-primary.dropdown-toggle {
-  color: #fff;
-  background-color: #025aa5;
+  color: #93a1a1;
+  background-color: #9d3a11;
   background-image: none;
-  border-color: #01549b;
+  border-color: #943710;
 }
 
 .btn-secondary {
@@ -2845,33 +2845,33 @@ fieldset[disabled] a.btn {
 }
 
 .btn-outline-primary {
-  color: #0275d8;
+  color: #cb4b16;
   background-image: none;
   background-color: transparent;
-  border-color: #0275d8;
+  border-color: #cb4b16;
 }
 
 .btn-outline-primary:hover {
   color: #fff;
-  background-color: #0275d8;
-  border-color: #0275d8;
+  background-color: #cb4b16;
+  border-color: #cb4b16;
 }
 
 .btn-outline-primary:focus, .btn-outline-primary.focus {
-  -webkit-box-shadow: 0 0 0 2px rgba(2, 117, 216, 0.5);
-          box-shadow: 0 0 0 2px rgba(2, 117, 216, 0.5);
+  -webkit-box-shadow: 0 0 0 2px rgba(203, 75, 22, 0.5);
+          box-shadow: 0 0 0 2px rgba(203, 75, 22, 0.5);
 }
 
 .btn-outline-primary.disabled, .btn-outline-primary:disabled {
-  color: #0275d8;
+  color: #cb4b16;
   background-color: transparent;
 }
 
 .btn-outline-primary:active, .btn-outline-primary.active,
 .show > .btn-outline-primary.dropdown-toggle {
   color: #fff;
-  background-color: #0275d8;
-  border-color: #0275d8;
+  background-color: #cb4b16;
+  border-color: #cb4b16;
 }
 
 .btn-outline-secondary {
@@ -4297,8 +4297,8 @@ tbody.collapse.show {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: #073642;
+  border: 1px solid #073642;
 }
 
 .card-block {
@@ -4333,14 +4333,14 @@ tbody.collapse.show {
 .card-header {
   padding: 0.75rem 1.25rem;
   margin-bottom: 0;
-  background-color: #f7f7f9;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: #073642;
+  border-bottom: 1px solid #073642;
 }
 
 .card-footer {
   padding: 0.75rem 1.25rem;
-  background-color: #f7f7f9;
-  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: #073642;
+  border-top: 1px solid #073642;
 }
 
 .card-header-tabs {
@@ -4407,7 +4407,7 @@ tbody.collapse.show {
 
 .card-outline-primary {
   background-color: transparent;
-  border-color: #0275d8;
+  border-color: #cb4b16;
 }
 
 .card-outline-secondary {
@@ -4460,7 +4460,7 @@ tbody.collapse.show {
 }
 
 .card-inverse .card-link:focus, .card-inverse .card-link:hover {
-  color: #fff;
+  color: #a0a0a0;
 }
 
 .card-blockquote {

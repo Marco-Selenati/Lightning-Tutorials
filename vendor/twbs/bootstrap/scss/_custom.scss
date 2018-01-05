@@ -1,0 +1,35 @@
+// Bootstrap overrides
+//
+// Copy variables from `_variables.scss` to this file to override default values
+// without modifying source files.
+
+// Create grayscale
+$gray-dark:                 #1c213d;
+$gray:                      #2f3233;
+$gray-light:                #464a4c;
+$gray-lighter:              #575e63;
+$gray-lightest:             #636c72;
+$white:                     #a0a0a0;
+$black:                     #000;
+
+$orange-spicey: #f34d00;
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg:       $gray-dark;
+$body-color:    $orange-spicey;
+$inverse-bg:    $gray-dark;
+$inverse-color: $gray-lighter;
+
+$enable-rounded: false;
+$enable-shadows: false;
+$enable-transitions: false;
+$spacer: 2rem;
+
+$navbar-light-color:                $orange-spicey;
+$navbar-light-hover-color:          rgba($orange-spicey,.7);
+$navbar-light-active-color:         rgba($orange-spicey,.9);
+$navbar-light-disabled-color:       rgba($orange-spicey,.3);
+$navbar-light-toggler-border:       rgba($orange-spicey,.1);

@@ -3,6 +3,25 @@
 // Copy variables from `_variables.scss` to this file to override default values
 // without modifying source files.
 
+//solarized tones
+$base03:    #002b36;
+$base02:    #073642;
+$base01:    #586e75;
+$base00:    #657b83;
+$base0:     #839496;
+$base1:     #93a1a1;
+$base2:     #eee8d5;
+$base3:     #fdf6e3;
+
+$yellow:    #b58900;
+$orange:    #cb4b16;
+$red:       #dc322f;
+$magenta:   #d33682;
+$violet:    #6c71c4;
+$blue:      #268bd2;
+$cyan:      #2aa198;
+$green:     #859900;
+
 // Create grayscale
 $gray-dark:                 #1c213d;
 $gray:                      #2f3233;
@@ -11,7 +30,6 @@ $gray-lighter:              #575e63;
 $gray-lightest:             #636c72;
 $white:                     #a0a0a0;
 $black:                     #000;
-$background:                #002b36;
 
 $orange-spicey: #f34d00;
 
@@ -19,18 +37,27 @@ $orange-spicey: #f34d00;
 //
 // Settings for the `<body>` element.
 
-$body-bg:       $background;
-$body-color:    $orange-spicey;
-$inverse-bg:    $background;
+$body-bg:       $base03;
+$body-color:    $base1;
+$inverse-bg:    $base03;
 $inverse-color: $gray-lighter;
+
+// Links
+//
+// Style anchor elements.
+
+$link-color:            $cyan;
+$link-decoration:       none;
+$link-hover-color:      darken($link-color, 15%);
+$link-hover-decoration: underline;
+
+$navbar-light-color:                $orange;
+$navbar-light-hover-color:          rgba($orange,.7);
+$navbar-light-active-color:         rgba($orange,.9);
+$navbar-light-disabled-color:       rgba($orange,.3);
+$navbar-light-toggler-border:       rgba($orange,.1);
 
 $enable-rounded: false;
 $enable-shadows: false;
 $enable-transitions: false;
 $spacer: 2rem;
-
-$navbar-light-color:                $orange-spicey;
-$navbar-light-hover-color:          rgba($orange-spicey,.7);
-$navbar-light-active-color:         rgba($orange-spicey,.9);
-$navbar-light-disabled-color:       rgba($orange-spicey,.3);
-$navbar-light-toggler-border:       rgba($orange-spicey,.1);

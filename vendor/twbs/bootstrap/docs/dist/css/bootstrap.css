@@ -342,7 +342,7 @@ body {
   font-weight: normal;
   line-height: 1.5;
   color: #f34d00;
-  background-color: #1c213d;
+  background-color: #002b36;
 }
 
 [tabindex="-1"]:focus {
@@ -2093,7 +2093,7 @@ pre code {
 }
 
 .table .table {
-  background-color: #1c213d;
+  background-color: #002b36;
 }
 
 .table-sm th,
@@ -2216,7 +2216,7 @@ pre code {
 .table-inverse th,
 .table-inverse td,
 .table-inverse thead th {
-  border-color: #1c213d;
+  border-color: #002b36;
 }
 
 .table-inverse.table-bordered {
@@ -5849,7 +5849,7 @@ button.close {
 }
 
 .bg-faded {
-  background-color: #171b33;
+  background-color: #001f27;
 }
 
 .bg-primary {

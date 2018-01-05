@@ -11,6 +11,7 @@ $gray-lighter:              #575e63;
 $gray-lightest:             #636c72;
 $white:                     #a0a0a0;
 $black:                     #000;
+$background:                #002b36;
 
 $orange-spicey: #f34d00;
 
@@ -18,9 +19,9 @@ $orange-spicey: #f34d00;
 //
 // Settings for the `<body>` element.
 
-$body-bg:       $gray-dark;
+$body-bg:       $background;
 $body-color:    $orange-spicey;
-$inverse-bg:    $gray-dark;
+$inverse-bg:    $background;
 $inverse-color: $gray-lighter;
 
 $enable-rounded: false;

@@ -51,6 +51,11 @@
     <script src="<?php
             echo $rootoff;
           ?>highlighterjs/highlight.pack.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+    <!--<script>hljs.initHighlightingOnLoad();</script>-->
+    <script>
+      $('span code').each(function(i, inline) {
+        hljs.highlightBlock(inline);
+      });
+    </script>
   </body>
 </html>

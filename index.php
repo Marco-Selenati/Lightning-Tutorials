@@ -1,55 +1,32 @@
 <?php
 $content = <<<'EOD'
 <h2>HTML</h2>
-<div class="row">
-  <div class="card">
+<div class="card-deck">
+  <div class="card text-center">
     <div class="card-block">
-      <h4 class="card-title">HTML Foundation</h4>
+      <h4 class="card-title">HTML?</h4>
       <p class="card-text">Doctype!?</p>
       <a href="sites/site1.php" class="btn btn-primary">Learn !</a>
     </div>
   </div>
-  <div class="card">
+  <div class="card text-center">
     <div class="card-block">
-      <h4 class="card-title">HTML Foundation</h4>
+      <h4 class="card-title">HTML-Dokument</h4>
       <p class="card-text">Doctype!?</p>
-      <a href="sites/site1.php" class="btn btn-primary">Learn !</a>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-block">
-      <h4 class="card-title">HTML Foundation</h4>
-      <p class="card-text">Doctype!?</p>
-      <a href="sites/site1.php" class="btn btn-primary">Learn !</a>
+      <a href="sites/site2.php" class="btn btn-primary">Learn !</a>
     </div>
   </div>
 </div>
-EOD;
-$content .= <<<'EOD'
-<pre><code class="html">
-EOD;
-$content .= htmlspecialchars(<<<'EOD'
-<h2>HTML</h2>
-<p>
-  <ul>
-    <li>
-      <a href="sites/site1.php">basic struct</a>
-    </li>
-    <li>
-      <a href="#">basic struct</a>
-    </li>
-    <li>
-      <a href="#">basic struct</a>
-    </li>
-    <li>
-      <a href="#">basic struct</a>
-    </li>
-  </ul>
-</p>
-EOD
-);
-$content .= <<<'EOD'
-</code></pre>
+<h2>CSS</h2>
+<div class="card-deck">
+  <div class="card text-center">
+    <div class="card-block">
+      <h4 class="card-title">CSS?</h4>
+      <p class="card-text">Doctype!?</p>
+      <a href="sites/site3.php" class="btn btn-primary">Learn !</a>
+    </div>
+  </div>
+</div>
 EOD;
 $rootoff = "";
 require 'php/base.php';

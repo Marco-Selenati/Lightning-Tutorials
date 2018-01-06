@@ -25,6 +25,23 @@
       span code.hljs {
         display: inline;
       }
+      /* from http://getbootstrap.com/docs/4.0/examples/sticky-footer/ */
+      /* Sticky footer styles
+      -------------------------------------------------- */
+      html {
+        position: relative;
+        min-height: 100%;
+      }
+      body {
+        margin-bottom: 60px; /* Margin bottom by footer height */
+      }
+      .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 60px; /* Set the fixed height of the footer here */
+        line-height: 60px; /* Vertically center the text there */
+      }
     </style>
   </head>
   <body>
@@ -33,7 +50,7 @@
             echo $rootoff;
           ?>index.php">Lightning-Tutorials</a>
     </nav>
-    <div class="container">
+    <main role="main" class="container">
       <div class="row">
         <div class="col-6 mx-auto">
           <?php
@@ -41,7 +58,12 @@
           ?>
         </div>
       </div>
-    </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <span>Mizi</span>
+      </div>
+    </footer>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

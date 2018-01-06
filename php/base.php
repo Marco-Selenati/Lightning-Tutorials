@@ -22,6 +22,9 @@
       body {
         font-family: 'VT323', monospace;
       }
+      span code.hljs {
+        display: inline;
+      }
     </style>
   </head>
   <body>
@@ -55,6 +58,9 @@
     <script>
       $('span code').each(function(i, inline) {
         hljs.highlightBlock(inline);
+      });
+      $('pre code').each(function(i, block) {
+        hljs.highlightBlock(block);
       });
     </script>
   </body>

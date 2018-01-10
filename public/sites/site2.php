@@ -7,13 +7,6 @@ $content .= <<<'EOD'
   Aufbau eines HTML-Dokuments
 </p>
 
-EOD;
-<<<'EOD'
-<h1>HTML-Dokument</h1>
-<p class="lead">
-  Aufbau eines HTML-Dokuments
-</p>
-
 EOD
 );
 $content .= format_code_inline_p(<<<'EOD'

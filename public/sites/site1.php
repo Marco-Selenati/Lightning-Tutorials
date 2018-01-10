@@ -4,10 +4,6 @@ $content = "";
 $content .= <<<'EOD'
 <h1>HTML</h1>
 
-EOD;
-<<<'EOD'
-<h1>HTML</h1>
-
 EOD
 );
 $content .= format_code_inline_p(<<<'EOD'

@@ -34,9 +34,6 @@ function site_generate($source) {
 
         } else if($tokenid == "_HTML_") {
             echo '_HTML___'."\n";
-            $output .= "<<<'EOD'";
-            $output .= substr($token, 6);
-            $output .= "\n".'EOD;'."\n";
             
         } else {
             echo 'NOT FOUND !!!!!'."\n"."\n";

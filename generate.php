@@ -46,7 +46,7 @@ function site_generate($source) {
         
         if($tokenid != "_HTML___") {
             $output .= "<<<'EOD'";
-            $output .= substr($token, 8);
+            $output .= substr($token, 6);
             $output .= "\n".'EOD'."\n".');'."\n";
 
         }

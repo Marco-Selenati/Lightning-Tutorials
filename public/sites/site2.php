@@ -7,8 +7,7 @@ $content .= <<<'EOD'
   Aufbau eines HTML-Dokuments
 </p>
 
-EOD
-);
+EOD;
 $content .= format_code_inline_p(<<<'EOD'
 Jedes HTML-Dokument sollte mit der Zeile
 <!doctype html>

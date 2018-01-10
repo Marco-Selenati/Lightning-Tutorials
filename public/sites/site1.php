@@ -4,8 +4,7 @@ $content = "";
 $content .= <<<'EOD'
 <h1>HTML</h1>
 
-EOD
-);
+EOD;
 $content .= format_code_inline_p(<<<'EOD'
 HTML ist eine Markup-Sprache. Sie macht nichts anderes wie sagen, was bestimmte Daten genau sind. Bsp.:
 <title>Dies ist der Titel</title>

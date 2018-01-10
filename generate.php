@@ -10,12 +10,6 @@ foreach($files as $file) {
     $txt = '<?php'."\n".'require "../php/code.php";'."\n".'$content = "";'."\n";
     $txt .= site_generate($in);
     $txt .= '$rootoff = "../";'."\n".'require "../php/base.php";'."\n".'?>'."\n";
-/*
-    echo 'sites_content/', $file, "\n";
-    echo $in;
-    echo 'sites/', $file, "\n";
-    echo $out;
-*/
     fwrite($out, $txt);
 
 }

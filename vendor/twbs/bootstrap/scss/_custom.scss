@@ -6,16 +6,16 @@
 //my own  tones
 // background
 // analogous colors
-$back1:    #941f7d;
-$back2:    #941f42;
-$back3:    #711f94;
+$back1:    #551147;
+$back2:    #5f132a;
+$back3:    #44125a;
 //$back0:    #657b83;
 
 // foreground
 // complementary to background
-$fore1:     #1f9436;
-$fore2:     #1f9471;
-$fore3:     #42941f;
+$fore1:     #26af42;
+$fore2:     #2ac495;
+$fore3:     #3f8a1d;
 
 // accent
 $orange: #aaf;
@@ -33,9 +33,9 @@ $black:                     #000;
 //
 // Settings for the `<body>` element.
 
-$body-bg:       $fore3;
-$body-color:    $fore1;
-$inverse-bg:    $fore3;
+$body-bg:       $back2;
+$body-color:    $fore2;
+$inverse-bg:    $body-bg;
 $inverse-color: $gray-lighter;
 
 // Links
@@ -53,10 +53,10 @@ $card-spacer-x:            1.25rem;
 $card-spacer-y:            .75rem;
 $card-border-width:        1px;
 $card-border-radius:       $border-radius;
-$card-border-color:        $back2;
+$card-border-color:        $back1;
 $card-border-radius-inner: calc(#{$card-border-radius} - #{$card-border-width});
-$card-cap-bg:              $back2;
-$card-bg:                  $back2;
+$card-cap-bg:              $card-border-color;
+$card-bg:                  $card-border-color;
 
 $card-link-hover-color:    $white;
 

@@ -22,7 +22,7 @@ foreach($files as $file) {
 
 function site_generate($source) {
     $output = "";
-    $tokens = explode("ayylmao", $source);
+    $tokens = explode("***", $source);
     foreach($tokens as $token) {
         $output .= '$content .= ';
         $tokenid = substr($token,0,8);

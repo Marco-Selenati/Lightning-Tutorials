@@ -4,7 +4,7 @@ _CODE___
 
 
 #define text_end;
-ayylmao_BCODE__
+***_BCODE__
 #define code;
 
 

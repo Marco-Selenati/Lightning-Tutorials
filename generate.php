@@ -3,7 +3,7 @@ $files = scandir('sites_content/');
 unset($files[1]);
 unset($files[0]);
 foreach($files as $file) {
-    $out = fopen("sites/".pathinfo('sites_content/'.$file)['filename'].".php", "w");
+    $out = fopen("public/sites/".pathinfo('sites_content/'.$file)['filename'].".php", "w");
     $in = file_get_contents('sites_content/'.$file);
 
     echo '*'.pathinfo('sites_content/'.$file)['filename'], "\n";

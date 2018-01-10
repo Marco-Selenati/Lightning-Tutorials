@@ -19,23 +19,23 @@ function site_generate($source) {
     $tokens = explode("***", $source);
     foreach($tokens as $token) {
         $output .= '$content .= ';
-        $tokenid = substr($token,0,8);
-        if($tokenid == "_TEXT___") {
+        $tokenid = substr($token, 0, 6);
+        if($tokenid == "_TEXT_") {
             echo '_TEXT___'."\n";
             $output .= "format_p(";
 
-        } else if($tokenid == "_BCODE__") {
+        } else if($tokenid == "_BCODE") {
             echo '_BCODE__'."\n";
             $output .= "format_code_block_p(";
             
-        } else if($tokenid == "_CODE___") {
+        } else if($tokenid == "_CODE_") {
             echo '_CODE___'."\n";
             $output .= "format_code_inline_p(";
 
-        } else if($tokenid == "_HTML___") {
+        } else if($tokenid == "_HTML_") {
             echo '_HTML___'."\n";
             $output .= "<<<'EOD'";
-            $output .= substr($token, 8);
+            $output .= substr($token, 6);
             $output .= "\n".'EOD;'."\n";
             
         } else {

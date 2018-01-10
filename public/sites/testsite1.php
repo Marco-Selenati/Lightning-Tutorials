@@ -1,7 +1,8 @@
 <?php
 require "../../php/code.php";
 $content = "";
-$content .= format_code_inline_p(<<<'EOD'#define text;
+$content .= format_code_inline_p(<<<'EOD'
+#define text;
 
 
 
@@ -9,7 +10,8 @@ $content .= format_code_inline_p(<<<'EOD'#define text;
 
 EOD
 );
-$content .= format_code_block_p(<<<'EOD'#define code;
+$content .= format_code_block_p(<<<'EOD'
+#define code;
 
 
 

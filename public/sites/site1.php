@@ -1,5 +1,5 @@
 <?php
-require "../php/code.php";
+require "../../php/code.php";
 $content = "";
 $content .= <<<'EOD'
 <h1>HTML</h1>
@@ -12,5 +12,5 @@ HTML ist eine Markup-Sprache. Sie macht nichts anderes wie sagen, was bestimmte 
 EOD
 );
 $rootoff = "../";
-require "../php/base.php";
+require "../../php/base.php";
 ?>

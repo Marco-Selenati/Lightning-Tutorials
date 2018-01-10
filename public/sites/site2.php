@@ -1,5 +1,5 @@
 <?php
-require "../php/code.php";
+require "../../php/code.php";
 $content = "";
 $content .= <<<'EOD'
 <h1>HTML-Dokument</h1>
@@ -60,5 +60,5 @@ Dieser <meta> Tag beinhaltet mehrere neue Sachen. Zuerst einmal fällt auf das e
 EOD
 );
 $rootoff = "../";
-require "../php/base.php";
+require "../../php/base.php";
 ?>

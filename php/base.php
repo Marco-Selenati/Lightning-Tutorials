@@ -19,12 +19,12 @@
     <!-- Bootstrap core CSS -->
     <link href="<?php
             echo $rootoff;
-          ?>vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+          ?>css/bootstrap.min.css" rel="stylesheet">
     <!-- highlighting -->
     <link rel="stylesheet"
       href="<?php
             echo $rootoff;
-          ?>highlighterjs/styles/solarized-dark.css">
+          ?>/styles/solarized-dark.css">
     <style>
       @import url('https://fonts.googleapis.com/css?family=VT323');
       body {
@@ -80,10 +80,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="<?php
             echo $rootoff;
-          ?>vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
+          ?>js/bootstrap.min.js"></script>
     <script src="<?php
             echo $rootoff;
-          ?>highlighterjs/highlight.pack.js"></script>
+          ?>js/highlight.pack.js"></script>
     <!--<script>hljs.initHighlightingOnLoad();</script>-->
     <script>
       $('span code').each(function(i, inline) {

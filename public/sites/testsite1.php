@@ -1,5 +1,5 @@
 <?php
-require "../php/code.php";
+require "../../php/code.php";
 $content = "";
 $content .= format_code_inline_p(<<<'EOD'
 #define text;
@@ -19,5 +19,5 @@ $content .= format_code_block_p(<<<'EOD'
 EOD
 );
 $rootoff = "../";
-require "../php/base.php";
+require "../../php/base.php";
 ?>

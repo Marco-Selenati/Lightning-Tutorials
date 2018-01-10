@@ -7,9 +7,9 @@ foreach($files as $file) {
     $in = file_get_contents('sites_content/'.$file);
 
     echo '*'.pathinfo('sites_content/'.$file)['filename'], "\n";
-    $txt = '<?php'."\n".'require "../php/code.php";'."\n".'$content = "";'."\n";
+    $txt = '<?php'."\n".'require "../../php/code.php";'."\n".'$content = "";'."\n";
     $txt .= site_generate($in);
-    $txt .= '$rootoff = "../";'."\n".'require "../php/base.php";'."\n".'?>'."\n";
+    $txt .= '$rootoff = "../";'."\n".'require "../../php/base.php";'."\n".'?>'."\n";
     fwrite($out, $txt);
 
 }

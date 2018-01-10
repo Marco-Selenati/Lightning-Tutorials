@@ -1,9 +1,6 @@
 <?php
 require "../php/code.php";
 $content = "";
-$content .= <<<'EOD'
-EOD
-);
-$rootoff = "../";
+$content .= $rootoff = "../";
 require "../php/base.php";
 ?>

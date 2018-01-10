@@ -29,22 +29,35 @@ function site_generate($source) {
         if($tokenid == "_TEXT___") {
             echo '_TEXT___'."\n";
             $output .= "format_p(";
+            $output .= "<<<'EOD'";
+            $output .= substr($token, 8);
+            $output .= "\n".'EOD'."\n".');'."\n";
 
         } else if($tokenid == "_BCODE__") {
             echo '_BCODE__'."\n";
             $output .= "format_code_block_p(";
+            $output .= "<<<'EOD'";
+            $output .= substr($token, 8);
+            $output .= "\n".'EOD'."\n".');'."\n";
             
         } else if($tokenid == "_CODE___") {
             echo '_CODE___'."\n";
             $output .= "format_code_inline_p(";
+            $output .= "<<<'EOD'";
+            $output .= substr($token, 8);
+            $output .= "\n".'EOD'."\n".');'."\n";
 
+        } else if($tokenid == "_HTML___") {
+            echo '_HTML___'."\n";
+            $output .= "<<<'EOD'";
+            $output .= substr($token, 8);
+            $output .= "\n".'EOD;'."\n";
+            
         } else {
             echo 'NOT FOUND !!!!!'."\n"."\n";
+            return $output;
 
         }
-        $output .= "<<<'EOD'";
-        $output .= substr($token, 8);
-        $output .= "\n".'EOD'."\n".');'."\n";
 
     }
 

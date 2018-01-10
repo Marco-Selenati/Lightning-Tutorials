@@ -6,19 +6,23 @@
 //my own  tones
 // background
 // analogous colors
-$back1:    #551147;
-$back2:    #5f132a;
-$back3:    #44125a;
+$back1:    #7d96cf;
+$back2:    darken(#7d96cf, 15%);
+$back3:    darken(#7d96cf, 25%);
 //$back0:    #657b83;
 
 // foreground
 // complementary to background
-$fore1:     #26af42;
-$fore2:     #2ac495;
-$fore3:     #3f8a1d;
+$fore1:     #d96aac;
+$fore2:    darken(#d96aac, 15%);
+$fore3:    darken(#d96aac, 25%);
+
+//font fff1ff
+//background B5C4E3
+//link FFBEF2
 
 // accent
-$orange: #aaf;
+$orange: #ffbef2;
 
 // Create grayscale
 $gray-dark:                 #1c213d;

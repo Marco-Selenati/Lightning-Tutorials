@@ -341,8 +341,8 @@ body {
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.5;
-  color: #c43289;
-  background-color: #4569ba;
+  color: black;
+  background-color: #802c10;
 }
 
 [tabindex="-1"]:focus {
@@ -398,12 +398,12 @@ blockquote {
 }
 
 a {
-  color: #9c286d;
+  color: black;
   text-decoration: none;
 }
 
 a:focus, a:hover {
-  color: #5f1842;
+  color: black;
   text-decoration: underline;
 }
 
@@ -2093,7 +2093,7 @@ pre code {
 }
 
 .table .table {
-  background-color: #4569ba;
+  background-color: #802c10;
 }
 
 .table-sm th,
@@ -2216,7 +2216,7 @@ pre code {
 .table-inverse th,
 .table-inverse td,
 .table-inverse thead th {
-  border-color: #4569ba;
+  border-color: #802c10;
 }
 
 .table-inverse.table-bordered {
@@ -2665,13 +2665,13 @@ fieldset[disabled] a.btn {
 }
 
 .btn-primary {
-  color: #c43289;
+  color: black;
   background-color: #ffbef2;
   border-color: #ffbef2;
 }
 
 .btn-primary:hover {
-  color: #c43289;
+  color: black;
   background-color: #ff8be8;
   border-color: #ff81e6;
 }
@@ -2688,7 +2688,7 @@ fieldset[disabled] a.btn {
 
 .btn-primary:active, .btn-primary.active,
 .show > .btn-primary.dropdown-toggle {
-  color: #c43289;
+  color: black;
   background-color: #ff8be8;
   background-image: none;
   border-color: #ff81e6;
@@ -3026,7 +3026,7 @@ fieldset[disabled] a.btn {
 
 .btn-link {
   font-weight: normal;
-  color: #9c286d;
+  color: black;
   border-radius: 0;
 }
 
@@ -3043,7 +3043,7 @@ fieldset[disabled] a.btn {
 }
 
 .btn-link:focus, .btn-link:hover {
-  color: #5f1842;
+  color: black;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -3148,7 +3148,7 @@ tbody.collapse.show {
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 1rem;
-  color: #c43289;
+  color: black;
   text-align: left;
   list-style: none;
   background-color: #fff;
@@ -4297,8 +4297,8 @@ tbody.collapse.show {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #7d96cf;
-  border: 1px solid #7d96cf;
+  background-color: #c44419;
+  border: 1px solid #c44419;
 }
 
 .card-block {
@@ -4333,14 +4333,14 @@ tbody.collapse.show {
 .card-header {
   padding: 0.75rem 1.25rem;
   margin-bottom: 0;
-  background-color: #7d96cf;
-  border-bottom: 1px solid #7d96cf;
+  background-color: #c44419;
+  border-bottom: 1px solid #c44419;
 }
 
 .card-footer {
   padding: 0.75rem 1.25rem;
-  background-color: #7d96cf;
-  border-top: 1px solid #7d96cf;
+  background-color: #c44419;
+  border-top: 1px solid #c44419;
 }
 
 .card-header-tabs {
@@ -5849,7 +5849,7 @@ button.close {
 }
 
 .bg-faded {
-  background-color: #4163af;
+  background-color: #73280f;
 }
 
 .bg-primary {

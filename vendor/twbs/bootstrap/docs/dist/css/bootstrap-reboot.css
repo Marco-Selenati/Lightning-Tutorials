@@ -268,8 +268,8 @@ body {
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.5;
-  color: #c43289;
-  background-color: #4569ba;
+  color: black;
+  background-color: #802c10;
 }
 
 [tabindex="-1"]:focus {
@@ -325,12 +325,12 @@ blockquote {
 }
 
 a {
-  color: #9c286d;
+  color: black;
   text-decoration: none;
 }
 
 a:focus, a:hover {
-  color: #5f1842;
+  color: black;
   text-decoration: underline;
 }
 

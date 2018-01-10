@@ -1,11 +1,22 @@
 <?php
+// this file is executed from the command line
+// to generate the /public/sites sites
+// they are generated from the /sites_content files
+// the parser uses these keywords:
+// *** to seperate individual segments
+// _TEXT_ gets wrapped in a p element
+// _BCODE code gets formatted in block form
+// _CODE_ code gets formatted in inline beween can be text
+// _HTML_ contains html elements
 $files = scandir('sites_content/');
+// unsets .. and .
 unset($files[1]);
 unset($files[0]);
 foreach($files as $file) {
     $out = fopen("public/sites/".pathinfo('sites_content/'.$file)['filename'].".php", "w");
     $in = file_get_contents('sites_content/'.$file);
 
+    // tells us which file is currently being parsed
     echo '*'.pathinfo('sites_content/'.$file)['filename'], "\n";
     $txt = '<?php'."\n".'require "../../php/code.php";'."\n".'$content = "";'."\n";
     $txt .= site_generate($in);
@@ -14,6 +25,9 @@ foreach($files as $file) {
 
 }
 
+// creates php source code from the given file
+// is is the replacement for a c preprocessor
+// because sadly php dosen't have one
 function site_generate($source) {
     $output = "";
     $tokens = explode("***", $source);
@@ -53,7 +67,6 @@ function site_generate($source) {
 
     }
 
-    
     return $output;
 
 }

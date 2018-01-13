@@ -25,27 +25,14 @@
       href="<?php
             echo $rootoff;
           ?>/styles/solarized-dark-tweaked.css">
+    <!-- moves the footer down -->
+    <link href="<?php
+      echo $rootoff;
+      ?>css/footer.css" rel="stylesheet">
     <style>
       @import url('https://fonts.googleapis.com/css?family=VT323');
       body {
         font-family: 'VT323', monospace;
-      }
-      /* from http://getbootstrap.com/docs/4.0/examples/sticky-footer/ */
-      /* Sticky footer styles
-      -------------------------------------------------- */
-      html {
-        position: relative;
-        min-height: 100%;
-      }
-      body {
-        margin-bottom: 60px; /* Margin bottom by footer height */
-      }
-      .footer {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 60px; /* Set the fixed height of the footer here */
-        line-height: 60px; /* Vertically center the text there */
       }
     </style>
   </head>

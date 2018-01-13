@@ -24,14 +24,11 @@
     <link rel="stylesheet"
       href="<?php
             echo $rootoff;
-          ?>/styles/solarized-dark.css">
+          ?>/styles/solarized-dark-tweaked.css">
     <style>
       @import url('https://fonts.googleapis.com/css?family=VT323');
       body {
         font-family: 'VT323', monospace;
-      }
-      span code.hljs {
-        display: inline;
       }
       /* from http://getbootstrap.com/docs/4.0/examples/sticky-footer/ */
       /* Sticky footer styles

@@ -42,9 +42,11 @@
   </head>
   <body>
     <nav class="navbar navbar-toggleable-md navbar-light">
-      <a class="navbar-brand" href="<?php
-            echo $rootoff;
-          ?>index.php">Lightning-Tutorials</a>
+      <div class="container">
+        <a class="navbar-brand" href="<?php
+              echo $rootoff;
+            ?>index.php">Lightning-Tutorials</a>
+      </div>
     </nav>
     <main class="container">
       <div class="row">

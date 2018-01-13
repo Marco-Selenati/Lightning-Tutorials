@@ -5,24 +5,22 @@
 
 //my own  tones
 // background
-// analogous colors
-$back1:           #c44419;
-$back2:    darken(#c44419, 15%);
-$back3:    darken(#c44419, 25%);
+$back1:           #1F1F1F;
+$back2:    #030303;
+$back3:    #000;
 //$back0:    #657b83;
 
 // foreground
-// complementary to background
-$fore1:           #000;
-$fore2:    darken(#000, 15%);
-$fore3:    darken(#000, 25%);
+$fore1:           #919100;
+$fore2:    $fore1;
+$fore3:    $fore1;
 
 //font fff1ff
 //background B5C4E3
 //link FFBEF2
 
 // accent
-$orange: #ffbef2;
+$orange: #005000;
 
 // Create grayscale
 $gray-dark:                 #1c213d;

@@ -24,11 +24,13 @@
     <link rel="stylesheet"
       href="<?php
             echo $rootoff;
-          ?>/styles/solarized-dark-tweaked.css">
+          ?>styles/solarized-dark-tweaked.css">
     <!-- moves the footer down -->
     <link href="<?php
       echo $rootoff;
       ?>css/footer.css" rel="stylesheet">
+    <!-- slides -->
+    <link href="/css/slippry.css" rel="stylesheet" />
     <!-- font -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <style>
@@ -43,7 +45,7 @@
             echo $rootoff;
           ?>index.php">Lightning-Tutorials</a>
     </nav>
-    <main role="main" class="container">
+    <main class="container">
       <div class="row">
         <div class="col mx-auto">
           <?php
@@ -77,6 +79,30 @@
       $('pre code').each(function(i, block) {
         hljs.highlightBlock(block);
       });
+    </script>
+    <!-- responsive slides -->
+    <script src="/js/slippry.min.js"></script>
+    <script>
+    jQuery('#slider').slippry({
+      // general elements & wrapper
+      slippryWrapper: '<div class="sy-box pictures-slider" />', // wrapper to wrap everything, including pager
+
+      // options
+      adaptiveHeight: false, // height of the sliders adapts to current slide
+      captions: false, // Position: overlay, below, custom, false
+
+      // pager
+      pager: false,
+      
+      // controls
+      controls: false,
+      autoHover: false,
+
+      // transitions
+      transition: 'kenburns', // fade, horizontal, kenburns, false
+      kenZoom: 140,
+      speed: 2000 // time the transition takes (ms)
+    });
     </script>
   </body>
 </html>

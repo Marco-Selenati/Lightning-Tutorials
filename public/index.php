@@ -1,5 +1,11 @@
 <?php
 $content = <<<'EOD'
+<ul id="slider">
+  <li><img src="images/code.jpg" alt=""></li>
+  <li><img src="images/break.jpg" alt=""></li>
+  <li><img src="images/powershell.jpg" alt=""></li>
+  <li><img src="images/productivephp.jpg" alt=""></li>
+</ul>
 <h2>HTML</h2>
 <div class="card-deck">
   <div class="card text-center">

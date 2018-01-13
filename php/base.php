@@ -29,10 +29,11 @@
     <link href="<?php
       echo $rootoff;
       ?>css/footer.css" rel="stylesheet">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <style>
-      @import url('https://fonts.googleapis.com/css?family=VT323');
       body {
-        font-family: 'VT323', monospace;
+        font-family: 'Open Sans', sans-serif;
       }
     </style>
   </head>

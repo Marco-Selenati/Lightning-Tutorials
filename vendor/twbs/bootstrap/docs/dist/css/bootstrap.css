@@ -342,7 +342,7 @@ body {
   font-weight: normal;
   line-height: 1.5;
   color: #919100;
-  background-color: #221;
+  background-color: #030303;
 }
 
 [tabindex="-1"]:focus {
@@ -2093,7 +2093,7 @@ pre code {
 }
 
 .table .table {
-  background-color: #221;
+  background-color: #030303;
 }
 
 .table-sm th,
@@ -2216,7 +2216,7 @@ pre code {
 .table-inverse th,
 .table-inverse td,
 .table-inverse thead th {
-  border-color: #221;
+  border-color: #030303;
 }
 
 .table-inverse.table-bordered {
@@ -4297,8 +4297,8 @@ tbody.collapse.show {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #000;
-  border: 1px solid #000;
+  background-color: #1f1f1f;
+  border: 1px solid #1f1f1f;
 }
 
 .card-block {
@@ -4333,14 +4333,14 @@ tbody.collapse.show {
 .card-header {
   padding: 0.75rem 1.25rem;
   margin-bottom: 0;
-  background-color: #000;
-  border-bottom: 1px solid #000;
+  background-color: #1f1f1f;
+  border-bottom: 1px solid #1f1f1f;
 }
 
 .card-footer {
   padding: 0.75rem 1.25rem;
-  background-color: #000;
-  border-top: 1px solid #000;
+  background-color: #1f1f1f;
+  border-top: 1px solid #1f1f1f;
 }
 
 .card-header-tabs {
@@ -5849,7 +5849,7 @@ button.close {
 }
 
 .bg-faded {
-  background-color: #18180c;
+  background-color: black;
 }
 
 .bg-primary {

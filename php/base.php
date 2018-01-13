@@ -60,7 +60,7 @@
     </nav>
     <main role="main" class="container">
       <div class="row">
-        <div class="col-6 mx-auto">
+        <div class="col mx-auto">
           <?php
             echo $content;
           ?>

@@ -3,24 +3,20 @@
 // Copy variables from `_variables.scss` to this file to override default values
 // without modifying source files.
 
-//solarized tones
-$base03:    #002b36;
-$base02:    #073642;
-$base01:    #586e75;
-$base00:    #657b83;
-$base0:     #839496;
-$base1:     #93a1a1;
-$base2:     #eee8d5;
-$base3:     #fdf6e3;
+//my own  tones
+// background
+$back1:           #1f1f1f;
+$back2:    #030303;
+$back3:    #000;
 
-$yellow:    #b58900;
-$orange:    #cb4b16;
-$red:       #dc322f;
-$magenta:   #d33682;
-$violet:    #6c71c4;
-$blue:      #268bd2;
-$cyan:      #2aa198;
-$green:     #859900;
+// foreground
+$fore1:           #919100;
+$fore2:    $fore1;
+$fore3:    $fore1;
+
+// accent
+$orange: #008c00;
+$accent-background: #004600;
 
 // Create grayscale
 $gray-dark:                 #1c213d;
@@ -31,22 +27,20 @@ $gray-lightest:             #636c72;
 $white:                     #a0a0a0;
 $black:                     #000;
 
-$orange-spicey: #f34d00;
-
 // Body
 //
 // Settings for the `<body>` element.
 
-$body-bg:       $base03;
-$body-color:    $base1;
-$inverse-bg:    $base03;
+$body-bg:       $back2;
+$body-color:    $fore2;
+$inverse-bg:    $body-bg;
 $inverse-color: $gray-lighter;
 
 // Links
 //
 // Style anchor elements.
 
-$link-color:            $cyan;
+$link-color:            $fore3;
 $link-decoration:       none;
 $link-hover-color:      darken($link-color, 15%);
 $link-hover-decoration: underline;
@@ -57,10 +51,10 @@ $card-spacer-x:            1.25rem;
 $card-spacer-y:            .75rem;
 $card-border-width:        1px;
 $card-border-radius:       $border-radius;
-$card-border-color:        $base02;
+$card-border-color:        $back1;
 $card-border-radius-inner: calc(#{$card-border-radius} - #{$card-border-width});
-$card-cap-bg:              $base02;
-$card-bg:                  $base02;
+$card-cap-bg:              $card-border-color;
+$card-bg:                  $card-border-color;
 
 $card-link-hover-color:    $white;
 
@@ -85,8 +79,8 @@ $btn-focus-box-shadow:           0 0 0 2px rgba($brand-primary, .25);
 $btn-active-box-shadow:          inset 0 3px 5px rgba($black,.125);
 
 $btn-primary-color:              $body-color;
-$btn-primary-bg:                 $orange;
-$btn-primary-border:             $orange;
+$btn-primary-bg:                 $accent-background;
+$btn-primary-border:             $accent-background;
 
 $navbar-light-color:                $orange;
 $navbar-light-hover-color:          rgba($orange,.7);

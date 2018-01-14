@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="HTML Development" />
     <meta name="author" content="Marco Selenati" />
 
     <!-- FAV ICO -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/manifest.json" />
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="theme-color" content="#ffffff" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=OmyNK9GEpY">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=OmyNK9GEpY">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=OmyNK9GEpY">
+    <link rel="manifest" href="/manifest.json?v=OmyNK9GEpY">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=OmyNK9GEpY" color="#5bbad5">
+    <link rel="shortcut icon" href="/favicon.ico?v=OmyNK9GEpY">
+    <meta name="theme-color" content="#ffffff">
 
     <title>Lightning-Tutorials</title>
 
@@ -24,43 +26,32 @@
     <link rel="stylesheet"
       href="<?php
             echo $rootoff;
-          ?>/styles/solarized-dark.css">
+          ?>styles/solarized-dark-tweaked.css">
+    <!-- moves the footer down -->
+    <link href="<?php
+      echo $rootoff;
+      ?>css/footer.css" rel="stylesheet">
+    <!-- slides -->
+    <link href="/css/slippry.css" rel="stylesheet" />
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <style>
-      @import url('https://fonts.googleapis.com/css?family=VT323');
       body {
-        font-family: 'VT323', monospace;
-      }
-      span code.hljs {
-        display: inline;
-      }
-      /* from http://getbootstrap.com/docs/4.0/examples/sticky-footer/ */
-      /* Sticky footer styles
-      -------------------------------------------------- */
-      html {
-        position: relative;
-        min-height: 100%;
-      }
-      body {
-        margin-bottom: 60px; /* Margin bottom by footer height */
-      }
-      .footer {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 60px; /* Set the fixed height of the footer here */
-        line-height: 60px; /* Vertically center the text there */
+        font-family: 'Open Sans', sans-serif;
       }
     </style>
   </head>
   <body>
     <nav class="navbar navbar-toggleable-md navbar-light">
-      <a class="navbar-brand" href="<?php
-            echo $rootoff;
-          ?>index.php">Lightning-Tutorials</a>
+      <div class="container">
+        <a class="navbar-brand" href="<?php
+              echo $rootoff;
+            ?>index.php">Lightning-Tutorials</a>
+      </div>
     </nav>
-    <main role="main" class="container">
+    <main class="container">
       <div class="row">
-        <div class="col-6 mx-auto">
+        <div class="col mx-auto">
           <?php
             echo $content;
           ?>
@@ -92,6 +83,30 @@
       $('pre code').each(function(i, block) {
         hljs.highlightBlock(block);
       });
+    </script>
+    <!-- responsive slides -->
+    <script src="/js/slippry.min.js"></script>
+    <script>
+    jQuery('#slider').slippry({
+      // general elements & wrapper
+      slippryWrapper: '<div class="sy-box pictures-slider" />', // wrapper to wrap everything, including pager
+
+      // options
+      adaptiveHeight: false, // height of the sliders adapts to current slide
+      captions: false, // Position: overlay, below, custom, false
+
+      // pager
+      pager: false,
+      
+      // controls
+      controls: false,
+      autoHover: false,
+
+      // transitions
+      transition: 'kenburns', // fade, horizontal, kenburns, false
+      kenZoom: 140,
+      speed: 2000 // time the transition takes (ms)
+    });
     </script>
   </body>
 </html>

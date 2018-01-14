@@ -1,6 +1,7 @@
 /*
 
 Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmail.com>
+Tweaked style for better site integeration
 
 */
 
@@ -8,8 +9,13 @@ Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmai
   display: block;
   overflow-x: auto;
   padding: 0.5em;
-  background: #002b36;
+  background: #0f0f0f; /* #002b36 */
   color: #839496;
+}
+
+/* with this we can put code highlighting into p blocks*/
+span code.hljs {
+  display: inline;
 }
 
 .hljs-comment,

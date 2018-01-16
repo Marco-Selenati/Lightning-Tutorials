@@ -18,6 +18,10 @@ $content .= format_code_block_p(<<<'EOD'
 #define code_end;
 EOD
 );
+$content .= <<<'EOD'
+<a href="TEST_1_a.php"><button type="button" class="btn btn-primary">Previous</button></a>
+EOD
+;
 $rootoff = "../";
 require "../../php/base.php";
 ?>

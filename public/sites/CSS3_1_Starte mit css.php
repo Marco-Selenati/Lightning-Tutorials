@@ -1,6 +1,7 @@
 <?php
 require "../../php/code.php";
 $content = "";
-$content .= $rootoff = "../";
+$content .= "";
+$rootoff = "../";
 require "../../php/base.php";
 ?>

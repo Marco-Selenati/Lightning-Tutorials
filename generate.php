@@ -27,23 +27,33 @@ foreach($files as $file) {
     $topic = explode('_', $filename)[0];
     // the index of the article in the topic
     $index = explode('_', $filename)[1];
-    echo 'topic ', $topic, "\n";
     $name = explode('_', $filename)[2];
 
     $topics[$topic][$index]["sitename"] = $name;
     $topics[$topic][$index]["filename"] = $filename;
-    
+
+}
+
+// first loop saves data
+// second loop uses the data to generate
+// links from site to site
+
+foreach($files as $file) {
+    $filename = pathinfo('sites_content/'.$file)['filename'];
     $out = fopen("public/sites/".$filename.".php", "w");
     $in = file_get_contents('sites_content/'.$file);
+    $index = explode('_', $filename)[1];
+    $topic = explode('_', $filename)[0];
 
     // tells us which file is currently being parsed
     echo '*', $filename, "\n";
     $txt = '<?php'."\n".'require "../../php/code.php";'."\n".'$content = "";'."\n";
-    $txt .= site_generate($in);
+    $txt .= site_generate($in, $index, $topics[$topic]);
     $txt .= '$rootoff = "../";'."\n".'require "../../php/base.php";'."\n".'?>'."\n";
     fwrite($out, $txt);
 
 }
+
 echo 'indexes', "\n";
 print_r($topics);
 
@@ -75,7 +85,7 @@ fwrite($out, $txt);// write the new content to the index file
 // creates php source code from the given file
 // is is the replacement for a c preprocessor
 // because sadly php dosen't have one
-function site_generate($source) {
+function site_generate($source, $index, $sites) {
     $output = "";
     $tokens = explode("***", $source);
     foreach($tokens as $token) {
@@ -100,8 +110,9 @@ function site_generate($source) {
             $output .= "\n".'EOD;'."\n";
             
         } else {
+            $output .= '"";'."\n";
             echo 'NOT FOUND !!!!!'."\n"."\n";
-            return $output;
+            continue;
 
         }
         
@@ -114,6 +125,22 @@ function site_generate($source) {
 
     }
 
+    // add the buttons for forward and backwards
+    echo "-i ", $index, "\n";
+    if($index > 1) {
+        $output .= '$content .= ';
+        $output .= "<<<'EOD'\n";
+        $output .= '<a href="'.$sites[$index - 1]["filename"].'.php"><button type="button" class="btn btn-primary">Previous</button></a>';
+        $output .= "\n".'EOD'."\n".';'."\n";
+    
+    }
+    if($index < count($sites)) {
+        $output .= '$content .= ';
+        $output .= "<<<'EOD'\n";
+        $output .= '<a href="'.$sites[$index + 1]["filename"].'.php"><button type="button" class="btn btn-primary">Next</button></a>';
+        $output .= "\n".'EOD'."\n".';'."\n";
+
+    }
     return $output;
 
 }

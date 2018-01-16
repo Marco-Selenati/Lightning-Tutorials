@@ -59,6 +59,10 @@ $content .= format_code_inline_p(<<<'EOD'
 Dieser <meta> Tag beinhaltet mehrere neue Sachen. Zuerst einmal fällt auf das er keinen Endtag hat. Der meta Tag ist einer von ganz wenigen Tags die keinen Endtag haben, weil sie nicht da sind um ein Stück Text zu beschreiben, sondern einfach irgendetwas aussagen. In diesem Fall sagt uns der Meta-Tag, mit welcher Kodierung dieses Dokument kodiert wurde. UTF-8 ist heutzutage der Standard und deshalb benutzen wir diese Kodierung. Diese Kodierung wird mithilfe eines Attributs mit dem Namen charset übergeben. Grundsätzlich kann jeder Tag ein Attribut haben, aber es macht nicht bei allen Sinn.
 EOD
 );
+$content .= <<<'EOD'
+<a href="HTML5_1_yey html.php"><button type="button" class="btn btn-primary">Previous</button></a>
+EOD
+;
 $rootoff = "../";
 require "../../php/base.php";
 ?>

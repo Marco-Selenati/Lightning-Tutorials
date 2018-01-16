@@ -8,22 +8,69 @@
 // _BCODE code gets formatted in block form
 // _CODE_ code gets formatted in inline beween can be text
 // _HTML_ contains html elements
+// _NAME_ the name of the site / the name thats displayed in the navigation
 $files = scandir('sites_content/');
 // unsets .. and .
 unset($files[1]);
 unset($files[0]);
+// array topics
+// HTML5 key
+// array is value
+// 1 index
+//  "sitename" value
+//  "filename" value
+$topics = [];
+
 foreach($files as $file) {
-    $out = fopen("public/sites/".pathinfo('sites_content/'.$file)['filename'].".php", "w");
+    $filename = pathinfo('sites_content/'.$file)['filename'];
+    // topic is the category of the article
+    $topic = explode('_', $filename)[0];
+    // the index of the article in the topic
+    $index = explode('_', $filename)[1];
+    echo 'topic ', $topic, "\n";
+    $name = explode('_', $filename)[2];
+
+    $topics[$topic][$index]["sitename"] = $name;
+    $topics[$topic][$index]["filename"] = $filename;
+    
+    $out = fopen("public/sites/".$filename.".php", "w");
     $in = file_get_contents('sites_content/'.$file);
 
     // tells us which file is currently being parsed
-    echo '*'.pathinfo('sites_content/'.$file)['filename'], "\n";
+    echo '*', $filename, "\n";
     $txt = '<?php'."\n".'require "../../php/code.php";'."\n".'$content = "";'."\n";
     $txt .= site_generate($in);
     $txt .= '$rootoff = "../";'."\n".'require "../../php/base.php";'."\n".'?>'."\n";
     fwrite($out, $txt);
 
 }
+echo 'indexes', "\n";
+print_r($topics);
+
+$txt = "";
+
+// creates the index file
+$txt .= file_get_contents("php/index_start.html");
+foreach($topics as $topic_name => $topic) {
+    $txt .= '<h2>'.$topic_name.'</h2>'."\n";
+    $txt .= '<div class="card-deck">'."\n";
+    foreach($topic as $site) {
+        $txt .= '<div class="card text-center">'."\n".'<div class="card-block">'."\n";
+        $txt .= '<h4 class="card-title">'.$site["sitename"].'?</h4>';
+        $txt .= '<a href="sites/'.$site["filename"].'.php" class="btn btn-primary">Lerne !</a>';
+        $txt .= '</div>'."\n".'</div>'."\n";
+
+    }
+    
+    $txt .= '</div>'."\n";
+
+}
+$txt .= file_get_contents("php/index_end.html");
+
+// open the index file
+$out = fopen("public/index.php", "w");
+
+fwrite($out, $txt);// write the new content to the index file
 
 // creates php source code from the given file
 // is is the replacement for a c preprocessor

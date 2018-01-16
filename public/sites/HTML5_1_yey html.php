@@ -12,7 +12,7 @@ HTML ist eine Markup-Sprache. Sie macht nichts anderes wie sagen, was bestimmte 
 EOD
 );
 $content .= <<<'EOD'
-<a href="HTML5_2_2cool.php"><button type="button" class="btn btn-primary">Next</button></a>
+<a href="HTML5_2_2cool.php"><button type="button" class="btn btn-primary">Nächstes</button></a>
 EOD
 ;
 $rootoff = "../";

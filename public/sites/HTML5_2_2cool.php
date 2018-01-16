@@ -60,7 +60,7 @@ Dieser <meta> Tag beinhaltet mehrere neue Sachen. Zuerst einmal fällt auf das e
 EOD
 );
 $content .= <<<'EOD'
-<a href="HTML5_1_yey html.php"><button type="button" class="btn btn-primary">Previous</button></a>
+<a href="HTML5_1_yey html.php"><button type="button" class="btn btn-primary">Vorheriges</button></a>
 EOD
 ;
 $rootoff = "../";

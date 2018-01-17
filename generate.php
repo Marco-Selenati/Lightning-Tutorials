@@ -66,7 +66,7 @@ foreach($topics as $topic_name => $topic) {
     $txt .= '<div class="card-deck">'."\n";
     foreach($topic as $site) {
         $txt .= '<div class="card text-center">'."\n".'<div class="card-block">'."\n";
-        $txt .= '<h4 class="card-title">'.$site["sitename"].'?</h4>';
+        $txt .= '<h4 class="card-title">'.$site["sitename"].'</h4>';
         $txt .= '<a href="sites/'.$site["filename"].'.php" class="btn btn-primary">Lerne !</a>';
         $txt .= '</div>'."\n".'</div>'."\n";
 

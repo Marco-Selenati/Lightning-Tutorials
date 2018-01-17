@@ -2,7 +2,7 @@
 require "../../php/code.php";
 $content = "";
 $content .= <<<'EOD'
-<h1>HTML</h1>
+<h1>HTML5</h1>
 
 EOD;
 $content .= format_code_inline_p(<<<'EOD'

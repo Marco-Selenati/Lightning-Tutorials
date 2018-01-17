@@ -10,18 +10,34 @@ $content = <<<'EOD'
 <div class="card-deck">
 <div class="card text-center">
 <div class="card-block">
-<h4 class="card-title">Starte mit css?</h4><a href="sites/CSS3_1_Starte mit css.php" class="btn btn-primary">Lerne !</a></div>
+<h4 class="card-title">CSS Grundlagen?</h4><a href="sites/CSS3_1_CSS Grundlagen.php" class="btn btn-primary">Lerne !</a></div>
+</div>
+<div class="card text-center">
+<div class="card-block">
+<h4 class="card-title">Das CSS Boxenmodel?</h4><a href="sites/CSS3_2_Das CSS Boxenmodel.php" class="btn btn-primary">Lerne !</a></div>
 </div>
 </div>
 <h2>HTML5</h2>
 <div class="card-deck">
 <div class="card text-center">
 <div class="card-block">
-<h4 class="card-title">yey html?</h4><a href="sites/HTML5_1_yey html.php" class="btn btn-primary">Lerne !</a></div>
+<h4 class="card-title">HTML5?</h4><a href="sites/HTML5_1_HTML5.php" class="btn btn-primary">Lerne !</a></div>
 </div>
 <div class="card text-center">
 <div class="card-block">
-<h4 class="card-title">2cool?</h4><a href="sites/HTML5_2_2cool.php" class="btn btn-primary">Lerne !</a></div>
+<h4 class="card-title">Aufbau eines HTML-Dokuments?</h4><a href="sites/HTML5_2_Aufbau eines HTML-Dokuments.php" class="btn btn-primary">Lerne !</a></div>
+</div>
+<div class="card text-center">
+<div class="card-block">
+<h4 class="card-title">Text einfügen?</h4><a href="sites/HTML5_3_Text einfügen.php" class="btn btn-primary">Lerne !</a></div>
+</div>
+<div class="card text-center">
+<div class="card-block">
+<h4 class="card-title">Bilder einfügen?</h4><a href="sites/HTML5_4_Bilder einfügen.php" class="btn btn-primary">Lerne !</a></div>
+</div>
+<div class="card text-center">
+<div class="card-block">
+<h4 class="card-title">Navigation und Links?</h4><a href="sites/HTML5_5_Navigation und Links.php" class="btn btn-primary">Lerne !</a></div>
 </div>
 </div>
 <h2>TEST</h2>

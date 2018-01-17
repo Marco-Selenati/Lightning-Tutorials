@@ -19,14 +19,10 @@
     <title>Lightning-Tutorials</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="<?php
-            echo $rootoff;
-          ?>css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
     <!-- highlighting -->
     <link rel="stylesheet"
-      href="<?php
-            echo $rootoff;
-          ?>styles/solarized-dark-tweaked.css">
+      href="/styles/solarized-dark-tweaked.css">
     <!-- moves the footer down -->
     <link href="<?php
       echo $rootoff;
@@ -44,9 +40,7 @@
   <body>
     <nav class="navbar navbar-toggleable-md navbar-light">
       <div class="container">
-        <a class="navbar-brand" href="<?php
-              echo $rootoff;
-            ?>index.php">Lightning-Tutorials</a>
+        <a class="navbar-brand" href="/index.php">Lightning-Tutorials</a>
       </div>
     </nav>
     <main class="container">
@@ -69,12 +63,8 @@
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="<?php
-            echo $rootoff;
-          ?>js/bootstrap.min.js"></script>
-    <script src="<?php
-            echo $rootoff;
-          ?>js/highlight.pack.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/highlight.pack.js"></script>
     <!--<script>hljs.initHighlightingOnLoad();</script>-->
     <script>
       $('span code').each(function(i, inline) {

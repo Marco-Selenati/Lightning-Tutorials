@@ -28,10 +28,10 @@ EOD
 $content .= format_code_block_p(<<<'EOD'
 <!doctype html>
 <html>
-<head>
-</head>
-<body>
-</body>
+  <head>
+  </head>
+  <body>
+  </body>
 </html>
 
 EOD
@@ -44,11 +44,11 @@ EOD
 $content .= format_code_block_p(<<<'EOD'
 <!doctype html>
 <html>
-<head>
-<meta charset=”utf-8”>
-</head>
-<body>
-</body>
+  <head>
+    <meta charset=”utf-8”>
+  </head>
+  <body>
+  </body>
 </html>
 
 EOD

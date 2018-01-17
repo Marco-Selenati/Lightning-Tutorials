@@ -12,11 +12,11 @@ EOD
 );
 $content .= format_code_block_p(<<<'EOD'
 <nav>
-    <ul>
-        <li>Eintrag 1</li>
-        <li>Eintrag 2</li>
-        <li>Eintrag 3</li>
-    </ul>
+  <ul>
+    <li>Eintrag 1</li>
+    <li>Eintrag 2</li>
+    <li>Eintrag 3</li>
+  </ul>
 </nav>
 
 EOD
@@ -30,11 +30,11 @@ EOD
 );
 $content .= format_code_block_p(<<<'EOD'
 <nav>
-    <ul>
-        <li><a href="site1.html">Hier geht’s zur Seite 1</a></li>
-        <li><a href="site2.html">Diese Seite ist noch nicht implementiert</a></li>
-        <li><a href="site3.html">Diese Seite ist noch nicht implementiert</a></li>
-    </ul>
+  <ul>
+    <li><a href="site1.html">Hier geht’s zur Seite 1</a></li>
+    <li><a href="site2.html">Diese Seite ist noch nicht implementiert</a></li>
+    <li><a href="site3.html">Diese Seite ist noch nicht implementiert</a></li>
+  </ul>
 </nav>
 
 EOD

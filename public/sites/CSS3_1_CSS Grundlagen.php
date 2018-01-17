@@ -12,11 +12,12 @@ EOD
 );
 $content .= format_code_block_p(<<<'EOD'
 <style>
-Tagname {
-Attribut: Wert;
-…
-...
-}
+  Tagname {
+    Attribut: Wert;
+    …
+    ...
+    
+  }
 </style>
 
 EOD
@@ -29,9 +30,10 @@ EOD
 );
 $content .= format_code_block_p(<<<'EOD'
 <style>
-p {
+  p {
     font-size: 15px;
-}
+
+  }
 </style>
 
 EOD

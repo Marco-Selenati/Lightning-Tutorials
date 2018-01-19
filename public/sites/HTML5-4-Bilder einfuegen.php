@@ -13,11 +13,11 @@ Bei dir sind die Attribute vermutlich anders, aber es sollte nicht schwierig sei
 EOD
 );
 $content .= <<<'EOD'
-<button type="button" class="btn btn-primary"><a href="HTML5-3-Text%20einfuegen.php" style="color:inherit">Vorheriges</a></button>
+<a class="btn btn-primary" href="HTML5-3-Text%20einfuegen.php" style="color:inherit">Vorheriges</a>
 EOD
 ;
 $content .= <<<'EOD'
-<button type="button" class="btn btn-primary"><a href="HTML5-5-Navigation%20und%20Links.php" style="color:inherit">Nächstes</a></button>
+<a class="btn btn-primary" href="HTML5-5-Navigation%20und%20Links.php">Nächstes</a>
 EOD
 ;
 $sitename = "HTML5-4-Bilder einfuegen";

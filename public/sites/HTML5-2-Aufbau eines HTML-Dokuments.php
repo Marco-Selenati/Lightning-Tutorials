@@ -63,11 +63,11 @@ Damit sind wir schon fertig mit allem, was für eine normale Webseite in den hea
 EOD
 );
 $content .= <<<'EOD'
-<button type="button" class="btn btn-primary"><a href="HTML5-1-HTML5.php" style="color:inherit">Vorheriges</a></button>
+<a class="btn btn-primary" href="HTML5-1-HTML5.php" style="color:inherit">Vorheriges</a>
 EOD
 ;
 $content .= <<<'EOD'
-<button type="button" class="btn btn-primary"><a href="HTML5-3-Text%20einfuegen.php" style="color:inherit">Nächstes</a></button>
+<a class="btn btn-primary" href="HTML5-3-Text%20einfuegen.php">Nächstes</a>
 EOD
 ;
 $sitename = "HTML5-2-Aufbau eines HTML-Dokuments";

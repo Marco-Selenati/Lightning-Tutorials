@@ -19,7 +19,7 @@ $content .= format_code_block(<<<'EOD'
 EOD
 );
 $content .= <<<'EOD'
-<button type="button" class="btn btn-primary"><a href="TEST-1-a.php" style="color:inherit">Vorheriges</a></button>
+<a class="btn btn-primary" href="TEST-1-a.php" style="color:inherit">Vorheriges</a>
 EOD
 ;
 $sitename = "TEST-2-b";

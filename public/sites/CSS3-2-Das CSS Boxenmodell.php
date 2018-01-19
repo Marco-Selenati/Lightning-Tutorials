@@ -14,7 +14,7 @@ $content .= <<<'EOD'
 <p>video</p>
 EOD;
 $content .= <<<'EOD'
-<button type="button" class="btn btn-primary"><a href="CSS3-1-CSS%20Grundlagen.php" style="color:inherit">Vorheriges</a></button>
+<a class="btn btn-primary" href="CSS3-1-CSS%20Grundlagen.php" style="color:inherit">Vorheriges</a>
 EOD
 ;
 $sitename = "CSS3-2-Das CSS Boxenmodell";

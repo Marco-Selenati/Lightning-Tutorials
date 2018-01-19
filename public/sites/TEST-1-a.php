@@ -3,7 +3,7 @@ require "../../php/code.php";
 $content = "";
 $content .= "";
 $content .= <<<'EOD'
-<button type="button" class="btn btn-primary"><a href="TEST-2-b.php" style="color:inherit">Nächstes</a></button>
+<a class="btn btn-primary" href="TEST-2-b.php">Nächstes</a>
 EOD
 ;
 $sitename = "TEST-1-a";

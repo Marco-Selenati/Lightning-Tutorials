@@ -45,7 +45,7 @@ Und damit sind wir mit den HTML Grundlagen fertig. HTML hat aber noch viele weit
 </p>
 EOD;
 $content .= <<<'EOD'
-<button type="button" class="btn btn-primary"><a href="HTML5-4-Bilder%20einfuegen.php" style="color:inherit">Vorheriges</a></button>
+<a class="btn btn-primary" href="HTML5-4-Bilder%20einfuegen.php" style="color:inherit">Vorheriges</a>
 EOD
 ;
 $sitename = "HTML5-5-Navigation und Links";

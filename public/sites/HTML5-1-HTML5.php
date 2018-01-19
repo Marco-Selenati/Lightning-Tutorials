@@ -13,7 +13,7 @@ HTML ist eine Markup-Sprache. Sie macht nichts anderes wie sagen, was bestimmte 
 EOD
 );
 $content .= <<<'EOD'
-<button type="button" class="btn btn-primary"><a href="HTML5-2-Aufbau%20eines%20HTML-Dokuments.php" style="color:inherit">Nächstes</a></button>
+<a class="btn btn-primary" href="HTML5-2-Aufbau%20eines%20HTML-Dokuments.php">Nächstes</a>
 EOD
 ;
 $sitename = "HTML5-1-HTML5";

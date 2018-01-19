@@ -1,12 +1,5 @@
 <?php
 
-function format_code_block_p($str) {
-    $ret = format_code_block($str);
-    $ret = format_p($ret);
-    return $ret;
-
-}
-
 function format_code_block($str) {
     $ret = '<pre><code>';
     $ret .= htmlspecialchars($str);

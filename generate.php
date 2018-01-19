@@ -97,7 +97,7 @@ function site_generate($source, $index, $sites) {
 
         } else if($tokenid == "_BCODE") {
             echo '_BCODE__'."\n";
-            $output .= "format_code_block_p(";
+            $output .= "format_code_block(";
             
         } else if($tokenid == "_CODE_") {
             echo '_CODE___'."\n";

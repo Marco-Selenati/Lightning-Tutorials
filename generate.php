@@ -49,7 +49,7 @@ foreach($files as $file) {
     echo '*', $filename, "\n";
     $txt = '<?php'."\n".'require "../../php/code.php";'."\n".'$content = "";'."\n";
     $txt .= site_generate($in, $index, $topics[$topic]);
-    $txt .= '$rootoff = "../";'."\n".'require "../../php/base.php";'."\n".'?>'."\n";
+    $txt .= '$sitename = "'.$filename.'";'."\n".'require "../../php/base.php";'."\n".'?>'."\n";
     fwrite($out, $txt);
 
 }

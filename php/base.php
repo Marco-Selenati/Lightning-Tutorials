@@ -16,7 +16,7 @@
     <link rel="shortcut icon" href="/favicon.ico?v=OmyNK9GEpY">
     <meta name="theme-color" content="#ffffff">
 
-    <title>Lightning-Tutorials</title>
+    <title><?php echo $sitename;?></title>
 
     <!-- Bootstrap core CSS -->
     <link type="text/css" href="/css/bootstrap.min.css" rel="stylesheet">

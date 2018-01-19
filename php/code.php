@@ -31,7 +31,7 @@ function format_code_inline($str) {
 }
 
 function format_p($str) {
-    $ret = '<p>'.$str.'</p>';
+    $ret = '<p>'.$str.'</p>'."\n";
     return $ret;
 
 }

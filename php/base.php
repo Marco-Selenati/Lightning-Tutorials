@@ -24,9 +24,7 @@
     <link type="text/css" rel="stylesheet"
       href="/styles/solarized-dark-tweaked.css">
     <!-- moves the footer down -->
-    <link href="<?php
-      echo $rootoff;
-      ?>css/footer.css" rel="stylesheet">
+    <link href="/css/footer.css" rel="stylesheet">
     <!-- slides -->
     <link type="text/css" href="/css/slippry.css" rel="stylesheet" />
     <!-- font -->

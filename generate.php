@@ -130,14 +130,14 @@ function site_generate($source, $index, $sites) {
     if($index > 1) {
         $output .= '$content .= ';
         $output .= "<<<'EOD'\n";
-        $output .= '<a href="'.href($sites[$index - 1]["filename"]).'.php"><button type="button" class="btn btn-primary">Vorheriges</button></a>';
+        $output .= '<button type="button" class="btn btn-primary"><a href="'.href($sites[$index - 1]["filename"]).'.php" style="color:inherit">Vorheriges</a></button>';
         $output .= "\n".'EOD'."\n".';'."\n";
     
     }
     if($index < count($sites)) {
         $output .= '$content .= ';
         $output .= "<<<'EOD'\n";
-        $output .= '<a href="'.href($sites[$index + 1]["filename"]).'.php"><button type="button" class="btn btn-primary">Nächstes</button></a>';
+        $output .= '<button type="button" class="btn btn-primary"><a href="'.href($sites[$index + 1]["filename"]).'.php" style="color:inherit">Nächstes</a></button>';
         $output .= "\n".'EOD'."\n".';'."\n";
 
     }

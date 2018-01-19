@@ -70,6 +70,6 @@ $content .= <<<'EOD'
 <button type="button" class="btn btn-primary"><a href="HTML5_3_Text%20einfuegen.php" style="color:inherit">Nächstes</a></button>
 EOD
 ;
-$rootoff = "../";
+$sitename = "HTML5_2_Aufbau eines HTML-Dokuments";
 require "../../php/base.php";
 ?>

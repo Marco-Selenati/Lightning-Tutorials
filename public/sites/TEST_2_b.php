@@ -22,6 +22,6 @@ $content .= <<<'EOD'
 <button type="button" class="btn btn-primary"><a href="TEST_1_a.php" style="color:inherit">Vorheriges</a></button>
 EOD
 ;
-$rootoff = "../";
+$sitename = "TEST_2_b";
 require "../../php/base.php";
 ?>

@@ -47,6 +47,6 @@ $content .= <<<'EOD'
 <button type="button" class="btn btn-primary"><a href="CSS3_2_Das%20CSS%20Boxenmodell.php" style="color:inherit">Nächstes</a></button>
 EOD
 ;
-$rootoff = "../";
+$sitename = "CSS3_1_CSS Grundlagen";
 require "../../php/base.php";
 ?>

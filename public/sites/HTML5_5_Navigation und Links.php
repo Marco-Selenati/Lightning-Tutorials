@@ -48,6 +48,6 @@ $content .= <<<'EOD'
 <button type="button" class="btn btn-primary"><a href="HTML5_4_Bilder%20einfuegen.php" style="color:inherit">Vorheriges</a></button>
 EOD
 ;
-$rootoff = "../";
+$sitename = "HTML5_5_Navigation und Links";
 require "../../php/base.php";
 ?>

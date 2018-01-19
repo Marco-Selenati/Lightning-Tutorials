@@ -67,7 +67,7 @@ $content .= <<<'EOD'
 EOD
 ;
 $content .= <<<'EOD'
-<a href="HTML5_3_Text einfuegen.php"><button type="button" class="btn btn-primary">Nächstes</button></a>
+<a href="HTML5_3_Text%20einfuegen.php"><button type="button" class="btn btn-primary">Nächstes</button></a>
 EOD
 ;
 $rootoff = "../";

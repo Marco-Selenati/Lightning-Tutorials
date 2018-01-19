@@ -14,7 +14,7 @@ $content .= <<<'EOD'
 <p>video</p>
 EOD;
 $content .= <<<'EOD'
-<a href="CSS3_1_CSS Grundlagen.php"><button type="button" class="btn btn-primary">Vorheriges</button></a>
+<a href="CSS3_1_CSS%20Grundlagen.php"><button type="button" class="btn btn-primary">Vorheriges</button></a>
 EOD
 ;
 $rootoff = "../";

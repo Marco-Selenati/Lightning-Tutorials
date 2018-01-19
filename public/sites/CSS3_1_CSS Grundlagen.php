@@ -44,7 +44,7 @@ Jetzt werden alle Paragraphen auf der ganzen Seite in Schriftgrösse 15px angeze
 EOD
 );
 $content .= <<<'EOD'
-<a href="CSS3_2_Das CSS Boxenmodell.php"><button type="button" class="btn btn-primary">Nächstes</button></a>
+<a href="CSS3_2_Das%20CSS%20Boxenmodell.php"><button type="button" class="btn btn-primary">Nächstes</button></a>
 EOD
 ;
 $rootoff = "../";

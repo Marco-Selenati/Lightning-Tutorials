@@ -10,45 +10,45 @@ $content = <<<'EOD'
 <div class="card-deck">
 <div class="card text-center">
 <div class="card-block">
-<h4 class="card-title">CSS Grundlagen</h4><a href="sites/CSS3_1_CSS%20Grundlagen.php" class="btn btn-primary">Lerne !</a></div>
+<h4 class="card-title">CSS Grundlagen</h4><a href="sites/CSS3-1-CSS%20Grundlagen.php" class="btn btn-primary">Lerne !</a></div>
 </div>
 <div class="card text-center">
 <div class="card-block">
-<h4 class="card-title">Das CSS Boxenmodell</h4><a href="sites/CSS3_2_Das%20CSS%20Boxenmodell.php" class="btn btn-primary">Lerne !</a></div>
+<h4 class="card-title">Das CSS Boxenmodell</h4><a href="sites/CSS3-2-Das%20CSS%20Boxenmodell.php" class="btn btn-primary">Lerne !</a></div>
 </div>
 </div>
 <h2>HTML5</h2>
 <div class="card-deck">
 <div class="card text-center">
 <div class="card-block">
-<h4 class="card-title">HTML5</h4><a href="sites/HTML5_1_HTML5.php" class="btn btn-primary">Lerne !</a></div>
+<h4 class="card-title">HTML5</h4><a href="sites/HTML5-1-HTML5.php" class="btn btn-primary">Lerne !</a></div>
 </div>
 <div class="card text-center">
 <div class="card-block">
-<h4 class="card-title">Aufbau eines HTML-Dokuments</h4><a href="sites/HTML5_2_Aufbau%20eines%20HTML-Dokuments.php" class="btn btn-primary">Lerne !</a></div>
+<h4 class="card-title">Aufbau eines HTML-Dokuments</h4><a href="sites/HTML5-2-Aufbau%20eines%20HTML-Dokuments.php" class="btn btn-primary">Lerne !</a></div>
 </div>
 <div class="card text-center">
 <div class="card-block">
-<h4 class="card-title">Text einfuegen</h4><a href="sites/HTML5_3_Text%20einfuegen.php" class="btn btn-primary">Lerne !</a></div>
+<h4 class="card-title">Text einfuegen</h4><a href="sites/HTML5-3-Text%20einfuegen.php" class="btn btn-primary">Lerne !</a></div>
 </div>
 <div class="card text-center">
 <div class="card-block">
-<h4 class="card-title">Bilder einfuegen</h4><a href="sites/HTML5_4_Bilder%20einfuegen.php" class="btn btn-primary">Lerne !</a></div>
+<h4 class="card-title">Bilder einfuegen</h4><a href="sites/HTML5-4-Bilder%20einfuegen.php" class="btn btn-primary">Lerne !</a></div>
 </div>
 <div class="card text-center">
 <div class="card-block">
-<h4 class="card-title">Navigation und Links</h4><a href="sites/HTML5_5_Navigation%20und%20Links.php" class="btn btn-primary">Lerne !</a></div>
+<h4 class="card-title">Navigation und Links</h4><a href="sites/HTML5-5-Navigation%20und%20Links.php" class="btn btn-primary">Lerne !</a></div>
 </div>
 </div>
 <h2>TEST</h2>
 <div class="card-deck">
 <div class="card text-center">
 <div class="card-block">
-<h4 class="card-title">a</h4><a href="sites/TEST_1_a.php" class="btn btn-primary">Lerne !</a></div>
+<h4 class="card-title">a</h4><a href="sites/TEST-1-a.php" class="btn btn-primary">Lerne !</a></div>
 </div>
 <div class="card text-center">
 <div class="card-block">
-<h4 class="card-title">b</h4><a href="sites/TEST_2_b.php" class="btn btn-primary">Lerne !</a></div>
+<h4 class="card-title">b</h4><a href="sites/TEST-2-b.php" class="btn btn-primary">Lerne !</a></div>
 </div>
 </div>
 EOD;

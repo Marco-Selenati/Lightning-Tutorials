@@ -18,6 +18,7 @@ unset($files[0]);
 // array is value
 // 1 index
 //  "sitename" value
+//  "sourcefilename" value
 //  "filename" value
 $topics = [];
 
@@ -30,7 +31,8 @@ foreach($files as $file) {
     $name = explode('_', $filename)[2];
 
     $topics[$topic][$index]["sitename"] = $name;
-    $topics[$topic][$index]["filename"] = $filename;
+    $topics[$topic][$index]["filename"] = str_replace('_', '-', $filename);
+    $topics[$topic][$index]["sourcefilename"] = $filename;
 
 }
 
@@ -38,19 +40,21 @@ foreach($files as $file) {
 // second loop uses the data to generate
 // links from site to site
 
-foreach($files as $file) {
-    $filename = pathinfo('sites_content/'.$file)['filename'];
-    $out = fopen("public/sites/".$filename.".php", "w");
-    $in = file_get_contents('sites_content/'.$file);
-    $index = explode('_', $filename)[1];
-    $topic = explode('_', $filename)[0];
+foreach($topics as $topic_name => $topic) {
+    foreach($topic as $site) {
+        $out = fopen("public/sites/".$site["filename"].".php", "w");
+        $in = file_get_contents('sites_content/'.$site["sourcefilename"]);
+        $index = explode('_', $site["sourcefilename"])[1];
+        $topic = explode('_', $site["sourcefilename"])[0];
+    
+        // tells us which file is currently being parsed
+        echo '*', $site["sourcefilename"], "\n";
+        $txt = '<?php'."\n".'require "../../php/code.php";'."\n".'$content = "";'."\n";
+        $txt .= site_generate($in, $index, $topics[$topic]);
+        $txt .= '$sitename = "'.$site["filename"].'";'."\n".'require "../../php/base.php";'."\n".'?>'."\n";
+        fwrite($out, $txt);
 
-    // tells us which file is currently being parsed
-    echo '*', $filename, "\n";
-    $txt = '<?php'."\n".'require "../../php/code.php";'."\n".'$content = "";'."\n";
-    $txt .= site_generate($in, $index, $topics[$topic]);
-    $txt .= '$sitename = "'.$filename.'";'."\n".'require "../../php/base.php";'."\n".'?>'."\n";
-    fwrite($out, $txt);
+    }
 
 }
 

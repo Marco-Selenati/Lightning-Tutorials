@@ -19,16 +19,16 @@
     <title>Lightning-Tutorials</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" href="/css/bootstrap.min.css" rel="stylesheet">
     <!-- highlighting -->
-    <link rel="stylesheet"
+    <link type="text/css" rel="stylesheet"
       href="/styles/solarized-dark-tweaked.css">
     <!-- moves the footer down -->
     <link href="<?php
       echo $rootoff;
       ?>css/footer.css" rel="stylesheet">
     <!-- slides -->
-    <link href="/css/slippry.css" rel="stylesheet" />
+    <link type="text/css" href="/css/slippry.css" rel="stylesheet" />
     <!-- font -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <style>
@@ -60,13 +60,13 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/highlight.pack.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/highlight.pack.js"></script>
     <!--<script>hljs.initHighlightingOnLoad();</script>-->
-    <script>
+    <script type="text/javascript">
       $('span code').each(function(i, inline) {
         hljs.highlightBlock(inline);
       });
@@ -75,8 +75,8 @@
       });
     </script>
     <!-- responsive slides -->
-    <script src="/js/slippry.min.js"></script>
-    <script>
+    <script type="text/javascript" src="/js/slippry.min.js"></script>
+    <script type="text/javascript">
     jQuery('#slider').slippry({
       // general elements & wrapper
       slippryWrapper: '<div class="sy-box pictures-slider" />', // wrapper to wrap everything, including pager

@@ -40,17 +40,6 @@ $content = <<<'EOD'
 <h4 class="card-title">Navigation und Links</h4><a href="sites/HTML5-5-Navigation%20und%20Links.php" class="btn btn-primary">Lerne !</a></div>
 </div>
 </div>
-<h2>TEST</h2>
-<div class="card-deck">
-<div class="card text-center">
-<div class="card-block">
-<h4 class="card-title">a</h4><a href="sites/TEST-1-a.php" class="btn btn-primary">Lerne !</a></div>
-</div>
-<div class="card text-center">
-<div class="card-block">
-<h4 class="card-title">b</h4><a href="sites/TEST-2-b.php" class="btn btn-primary">Lerne !</a></div>
-</div>
-</div>
 EOD;
 $sitename = "Lightning-Tutorials";
 require '../php/base.php';

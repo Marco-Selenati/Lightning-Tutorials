@@ -22,7 +22,7 @@ $content .= format_code_block_p(<<<'EOD'
 EOD
 );
 $content .= format_code_inline_p(<<<'EOD'
-Wenn uns die Seite jetzt anschauen, dann sehen wir zwar ein Inhaltsverzeichnis, aber es passiert nichts, wenn wir auf die Einträge klicken. Das ist, weil die Einträge keine Links zu anderen Seiten sind. Links definieren wir mit dem <a> Tag. Dieser Tag brauch nur 1 Attribut, nämlich das href-Attribut. In das href-Attribut können wir, genau wie in das src-Attribut, einen Pfad angeben. Des Weiteren können wir auch die Adresse einer anderen Webseite angeben, wie zum Beispiel https://www.google.ch. In unserem Fall wollen wir aber auf eine andere Seite von unserer Homepage weiterleiten. Um das zu machen müssen wir aber zuerst überhaupt eine zweite Seite haben. Diese können wir erstellen, indem wir einfach ein zweites html-Dokument in unserem Verzeichnis anlegen und die Grundstruktur eines html-Dokuments dort hineinkopieren. In meinem Fall habe ich dieses Dokument site1.html genannt und werde ab jetzt diesen Namen verwenden. Du kannst es aber nennen wie du willst, und musst nur meinen Namen durch deinen austauschen. Ein Link zu meiner Seite würde so aussehen:
+Wenn uns die Seite jetzt anschauen, dann sehen wir zwar ein Inhaltsverzeichnis, aber es passiert nichts, wenn wir auf die Einträge klicken. Das ist, weil die Einträge keine Links zu anderen Seiten sind. Links definieren wir mit dem <a> Tag. Dieser Tag brauch nur 1 Attribut, nämlich das href-Attribut. In das href-Attribut können wir, genau wie in das src-Attribut, einen Pfad angeben. Des Weiteren können wir auch die Adresse einer anderen Webseite angeben, wie zum Beispiel http://www.google.ch. In unserem Fall wollen wir aber auf eine andere Seite von unserer Homepage weiterleiten. Um das zu machen müssen wir aber zuerst überhaupt eine zweite Seite haben. Diese können wir erstellen, indem wir einfach ein zweites html-Dokument in unserem Verzeichnis anlegen und die Grundstruktur eines html-Dokuments dort hineinkopieren. In meinem Fall habe ich dieses Dokument site1.html genannt und werde ab jetzt diesen Namen verwenden. Du kannst es aber nennen wie du willst, und musst nur meinen Namen durch deinen austauschen. Ein Link zu meiner Seite würde so aussehen:
 <a href="site1.html">Dies ist der Text den du anklicken kannst um auf site1 zu gelangen</a>
 Da wir jetzt wissen, wie man einen Link macht, können wir dies einfach in unsere Navigation einbauen. Sie sieht dann etwa so aus:
 
@@ -39,11 +39,11 @@ $content .= format_code_block_p(<<<'EOD'
 
 EOD
 );
-$content .= format_code_inline_p(<<<'EOD'
-Und damit sind wir mit den HTML Grundlagen fertig. HTML hat aber noch viele weitere Sachen zu bieten, und ist selber auch nur der Grundbaustein für die vielen anderen Technologien des Webs, das heisst du hast noch nicht ausgelernt. Um herauszufinden, wie du deine Webseite anders aussehen lässt, wie ein Word-Dokument wo alles schwarz auf Weiss und linksbündig ist, mach mit unserem CSS Tutorial weiter. Wenn du irgendwelche Fragen hast, oder noch mehr lernen willst, dann gibt es auf www.w3schools.com eine gute Referenz zu verschiedensten Technologien des Webs.
-
-EOD
-);
+$content .= <<<'EOD'
+<p>
+Und damit sind wir mit den HTML Grundlagen fertig. HTML hat aber noch viele weitere Sachen zu bieten, und ist selber auch nur der Grundbaustein für die vielen anderen Technologien des Webs, das heisst du hast noch nicht ausgelernt. Um herauszufinden, wie du deine Webseite anders aussehen lässt, wie ein Word-Dokument wo alles schwarz auf Weiss und linksbündig ist, mach mit unserem CSS Tutorial weiter. Wenn du irgendwelche Fragen hast, oder noch mehr lernen willst, dann gibt es auf <a href="http://www.w3schools.com">w3schools</a> eine gute Referenz zu verschiedensten Technologien des Webs.
+</p>
+EOD;
 $content .= <<<'EOD'
 <a href="HTML5_4_Bilder einfuegen.php"><button type="button" class="btn btn-primary">Vorheriges</button></a>
 EOD

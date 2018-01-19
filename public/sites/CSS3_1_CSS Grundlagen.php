@@ -39,7 +39,7 @@ $content .= format_code_block_p(<<<'EOD'
 EOD
 );
 $content .= format_code_inline_p(<<<'EOD'
-Jetzt werden alle Paragraphen auf der ganzen Seite in Schriftgrösse 15px angezeigt werden.
+Jetzt werden alle Paragraphen auf der ganzen Seite in Schriftgrösse 15px angezeigt.
 
 EOD
 );

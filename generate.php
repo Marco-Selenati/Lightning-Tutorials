@@ -43,7 +43,7 @@ foreach($files as $file) {
 foreach($topics as $topic_name => $topic) {
     foreach($topic as $site) {
         $out = fopen("public/sites/".$site["filename"].".php", "w");
-        $in = file_get_contents('sites_content/'.$site["sourcefilename"]);
+        $in = file_get_contents('sites_content/'.$site["sourcefilename"].'.html');
         $index = explode('_', $site["sourcefilename"])[1];
         $topic = explode('_', $site["sourcefilename"])[0];
     

@@ -67,7 +67,7 @@ foreach($topics as $topic_name => $topic) {
     foreach($topic as $site) {
         $txt .= '<div class="card text-center">'."\n".'<div class="card-block">'."\n";
         $txt .= '<h4 class="card-title">'.$site["sitename"].'</h4>';
-        $txt .= '<a href="sites/'.$site["filename"].'.php" class="btn btn-primary">Lerne !</a>';
+        $txt .= '<a href="sites/'.href($site["filename"]).'.php" class="btn btn-primary">Lerne !</a>';
         $txt .= '</div>'."\n".'</div>'."\n";
 
     }
@@ -130,18 +130,25 @@ function site_generate($source, $index, $sites) {
     if($index > 1) {
         $output .= '$content .= ';
         $output .= "<<<'EOD'\n";
-        $output .= '<a href="'.$sites[$index - 1]["filename"].'.php"><button type="button" class="btn btn-primary">Vorheriges</button></a>';
+        $output .= '<a href="'.href($sites[$index - 1]["filename"]).'.php"><button type="button" class="btn btn-primary">Vorheriges</button></a>';
         $output .= "\n".'EOD'."\n".';'."\n";
     
     }
     if($index < count($sites)) {
         $output .= '$content .= ';
         $output .= "<<<'EOD'\n";
-        $output .= '<a href="'.$sites[$index + 1]["filename"].'.php"><button type="button" class="btn btn-primary">Nächstes</button></a>';
+        $output .= '<a href="'.href($sites[$index + 1]["filename"]).'.php"><button type="button" class="btn btn-primary">Nächstes</button></a>';
         $output .= "\n".'EOD'."\n".';'."\n";
 
     }
     return $output;
+
+}
+
+function href($filename) {
+    $filename = str_replace(' ', '%20', $filename);
+    $filename;
+    return $filename;
 
 }
 ?>

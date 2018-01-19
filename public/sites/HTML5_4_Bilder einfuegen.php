@@ -13,11 +13,11 @@ Bei dir sind die Attribute vermutlich anders, aber es sollte nicht schwierig sei
 EOD
 );
 $content .= <<<'EOD'
-<a href="HTML5_3_Text%20einfuegen.php"><button type="button" class="btn btn-primary">Vorheriges</button></a>
+<button type="button" class="btn btn-primary"><a href="HTML5_3_Text%20einfuegen.php" style="color:inherit">Vorheriges</a></button>
 EOD
 ;
 $content .= <<<'EOD'
-<a href="HTML5_5_Navigation%20und%20Links.php"><button type="button" class="btn btn-primary">Nächstes</button></a>
+<button type="button" class="btn btn-primary"><a href="HTML5_5_Navigation%20und%20Links.php" style="color:inherit">Nächstes</a></button>
 EOD
 ;
 $rootoff = "../";

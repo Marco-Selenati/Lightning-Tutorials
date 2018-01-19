@@ -63,11 +63,11 @@ Damit sind wir schon fertig mit allem, was für eine normale Webseite in den hea
 EOD
 );
 $content .= <<<'EOD'
-<a href="HTML5_1_HTML5.php"><button type="button" class="btn btn-primary">Vorheriges</button></a>
+<button type="button" class="btn btn-primary"><a href="HTML5_1_HTML5.php" style="color:inherit">Vorheriges</a></button>
 EOD
 ;
 $content .= <<<'EOD'
-<a href="HTML5_3_Text%20einfuegen.php"><button type="button" class="btn btn-primary">Nächstes</button></a>
+<button type="button" class="btn btn-primary"><a href="HTML5_3_Text%20einfuegen.php" style="color:inherit">Nächstes</a></button>
 EOD
 ;
 $rootoff = "../";

@@ -45,7 +45,7 @@ Und damit sind wir mit den HTML Grundlagen fertig. HTML hat aber noch viele weit
 </p>
 EOD;
 $content .= <<<'EOD'
-<a href="HTML5_4_Bilder%20einfuegen.php"><button type="button" class="btn btn-primary">Vorheriges</button></a>
+<button type="button" class="btn btn-primary"><a href="HTML5_4_Bilder%20einfuegen.php" style="color:inherit">Vorheriges</a></button>
 EOD
 ;
 $rootoff = "../";

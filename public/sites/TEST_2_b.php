@@ -19,7 +19,7 @@ $content .= format_code_block(<<<'EOD'
 EOD
 );
 $content .= <<<'EOD'
-<a href="TEST_1_a.php"><button type="button" class="btn btn-primary">Vorheriges</button></a>
+<button type="button" class="btn btn-primary"><a href="TEST_1_a.php" style="color:inherit">Vorheriges</a></button>
 EOD
 ;
 $rootoff = "../";

@@ -15,11 +15,11 @@ Wenn man jetzt wieder im Browser nachschaut, dann merkt man, dass der Text diese
 EOD
 );
 $content .= <<<'EOD'
-<a href="HTML5_2_Aufbau%20eines%20HTML-Dokuments.php"><button type="button" class="btn btn-primary">Vorheriges</button></a>
+<button type="button" class="btn btn-primary"><a href="HTML5_2_Aufbau%20eines%20HTML-Dokuments.php" style="color:inherit">Vorheriges</a></button>
 EOD
 ;
 $content .= <<<'EOD'
-<a href="HTML5_4_Bilder%20einfuegen.php"><button type="button" class="btn btn-primary">Nächstes</button></a>
+<button type="button" class="btn btn-primary"><a href="HTML5_4_Bilder%20einfuegen.php" style="color:inherit">Nächstes</a></button>
 EOD
 ;
 $rootoff = "../";

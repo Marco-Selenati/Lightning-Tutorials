@@ -3,7 +3,7 @@ require "../../php/code.php";
 $content = "";
 $content .= "";
 $content .= <<<'EOD'
-<a href="TEST_2_b.php"><button type="button" class="btn btn-primary">Nächstes</button></a>
+<button type="button" class="btn btn-primary"><a href="TEST_2_b.php" style="color:inherit">Nächstes</a></button>
 EOD
 ;
 $rootoff = "../";

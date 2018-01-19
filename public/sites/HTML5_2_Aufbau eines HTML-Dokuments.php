@@ -13,7 +13,7 @@ beginnen, die dem Browser sagt, dass dieses Dokument vom Typ HMTL ist. Danach fo
 
 EOD
 );
-$content .= format_code_block_p(<<<'EOD'
+$content .= format_code_block(<<<'EOD'
 <!doctype html>
 <html>
 </html>
@@ -25,7 +25,7 @@ In diese hinein kommen der head und der body
 
 EOD
 );
-$content .= format_code_block_p(<<<'EOD'
+$content .= format_code_block(<<<'EOD'
 <!doctype html>
 <html>
   <head>
@@ -41,7 +41,7 @@ Im head werden gewisse Informationen die für die ganze Seite gelten gespeichert
 
 EOD
 );
-$content .= format_code_block_p(<<<'EOD'
+$content .= format_code_block(<<<'EOD'
 <!doctype html>
 <html>
   <head>

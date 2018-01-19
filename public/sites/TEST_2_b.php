@@ -10,7 +10,7 @@ $content .= format_code_inline_p(<<<'EOD'
 
 EOD
 );
-$content .= format_code_block_p(<<<'EOD'
+$content .= format_code_block(<<<'EOD'
 #define code;
 
 

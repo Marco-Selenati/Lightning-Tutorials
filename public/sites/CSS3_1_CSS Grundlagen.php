@@ -10,7 +10,7 @@ CSS-Code kann man an verschieden Stellen hinschreiben, aber die meistverbreitete
 
 EOD
 );
-$content .= format_code_block_p(<<<'EOD'
+$content .= format_code_block(<<<'EOD'
 <style>
   Tagname {
     Attribut: Wert;
@@ -28,7 +28,7 @@ Wenn wir jetzt zum Beispiel die Schriftgrösse des Fliesstextes zu 15 Pixeln än
 
 EOD
 );
-$content .= format_code_block_p(<<<'EOD'
+$content .= format_code_block(<<<'EOD'
 <style>
   p {
     font-size: 15px;

@@ -10,7 +10,7 @@ Eine Website besteht normalerweise nicht nur aus einer Seite und hat meistens ei
 
 EOD
 );
-$content .= format_code_block_p(<<<'EOD'
+$content .= format_code_block(<<<'EOD'
 <nav>
   <ul>
     <li>Eintrag 1</li>
@@ -28,7 +28,7 @@ Da wir jetzt wissen, wie man einen Link macht, können wir dies einfach in unser
 
 EOD
 );
-$content .= format_code_block_p(<<<'EOD'
+$content .= format_code_block(<<<'EOD'
 <nav>
   <ul>
     <li><a href="site1.html">Hier geht’s zur Seite 1</a></li>

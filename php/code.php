@@ -18,7 +18,6 @@ function format_code_inline_p($str) {
 function format_code_inline($str) {
     $ret = htmlspecialchars($str);
     $ret = preg_replace(['/&lt/', '/&gt/'], ['<span><code> &lt', '&gt; </code></span>'], $ret);
-    $ret = preg_replace('/<\/span>;/', '</span>', $ret);
     return $ret;
 
 }

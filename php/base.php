@@ -60,13 +60,13 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="/js/highlight.pack.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/highlight.pack.js"></script>
     <!--<script>hljs.initHighlightingOnLoad();</script>-->
-    <script type="text/javascript">
+    <script>
       $('span code').each(function(i, inline) {
         hljs.highlightBlock(inline);
       });
@@ -75,8 +75,8 @@
       });
     </script>
     <!-- responsive slides -->
-    <script type="text/javascript" src="/js/slippry.min.js"></script>
-    <script type="text/javascript">
+    <script src="/js/slippry.min.js"></script>
+    <script>
     jQuery('#slider').slippry({
       // general elements & wrapper
       slippryWrapper: '<div class="sy-box pictures-slider" />', // wrapper to wrap everything, including pager

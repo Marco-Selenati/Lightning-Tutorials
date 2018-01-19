@@ -52,6 +52,6 @@ $content = <<<'EOD'
 </div>
 </div>
 EOD;
-$rootoff = "";
+$sitename = "Lightning-Tutorials";
 require '../php/base.php';
 ?>

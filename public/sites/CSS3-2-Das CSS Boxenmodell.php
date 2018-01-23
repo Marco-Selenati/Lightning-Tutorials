@@ -12,8 +12,8 @@ EOD
 );
 $content .= <<<'EOD'
 <div class="embed-responsive embed-responsive-16by9">
-    <video controls>
-        <source class="embed-responsive-item" src="../video/lernvideo_lightning_tutorials.mp4" type="video/mp4">
+    <video class="embed-responsive-item" controls>
+        <source src="../video/lernvideo_lightning_tutorials.mp4" type="video/mp4">
         Dein browser supported nicht das video format.
     </video>
 </div>

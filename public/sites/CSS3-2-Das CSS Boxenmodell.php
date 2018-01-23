@@ -11,7 +11,11 @@ Da das CSS Boxenmodel ein bisschen schwierig ist, in Worten zu erklären, haben 
 EOD
 );
 $content .= <<<'EOD'
-<p>video</p>
+<video controls>
+    <source src="video/lernvideo_lightning_tutorials.mp4" type="video/mp4">
+    Dein browser supported nicht das video format.
+</video>
+
 EOD;
 $content .= <<<'EOD'
 <a class="btn btn-primary" href="CSS3-1-CSS%20Grundlagen.php" style="color:inherit">Vorheriges</a>

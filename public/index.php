@@ -1,10 +1,13 @@
 <?php
 $content = <<<'EOD'
 <ul id="slider">
-    <li><img src="images/code.jpg" alt=""></li>
-    <li><img src="images/break.jpg" alt=""></li>
-    <li><img src="images/powershell.jpg" alt=""></li>
-    <li><img src="images/productivephp.jpg" alt=""></li>
+    <li><img src="images/bootstrapmincode.jpg" alt="bootstrap code"></li>
+    <li><img src="images/break.jpg" alt="console output"></li>
+    <li><img src="images/code.jpg" alt="function parameters"></li>
+    <li><img src="images/consoleout.jpg" alt="PHP arrays"></li>
+    <li><img src="images/powershell.jpg" alt="powershell output"></li>
+    <li><img src="images/productivephp.jpg" alt="php code"></li>
+    <li><img src="images/structs.jpg" alt="structs in C"></li>
 </ul>
 <h2>CSS3</h2>
 <div class="card-deck">

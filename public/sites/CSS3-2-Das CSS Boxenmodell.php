@@ -12,7 +12,7 @@ EOD
 );
 $content .= <<<'EOD'
 <video controls>
-    <source src="video/lernvideo_lightning_tutorials.mp4" type="video/mp4">
+    <source src="../video/lernvideo_lightning_tutorials.mp4" type="video/mp4">
     Dein browser supported nicht das video format.
 </video>
 

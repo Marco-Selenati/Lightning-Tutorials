@@ -2,10 +2,10 @@
 <html lang="de">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="HTML Development" />
-    <meta name="author" content="Marco Selenati" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="HTML Development">
+    <meta name="author" content="Marco Selenati">
 
     <!-- FAV ICO -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=OmyNK9GEpY">
@@ -63,7 +63,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/highlight.pack.js"></script>
-    <!--<script>hljs.initHighlightingOnLoad();</script>-->
+    <!-- Highlighting -->
     <script>
       $('span code').each(function(i, inline) {
         hljs.highlightBlock(inline);
